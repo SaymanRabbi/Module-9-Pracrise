@@ -1,1 +1,89 @@
 /* --------Google Fonts---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+/* --------global css------- */
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: inherit;
+    background: #F3F1FF;
+}
+/* -------utility css------- */
+.utility{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+}
+/* -------header style----- */
+header{
+    max-width: 1440px;
+    height: 94px;
+}
+/* -------nav-bar style------ */
+nav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #562EFF;
+    align-items: center;
+}
+.nav-bar-logo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15.58px;
+}
+.nav-bar-logo .logo img{
+    width: 40.42px;
+    height: 51px;
+}
+.nav-bar-logo .logo-text{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.nav-bar-menu{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.nav-bar-menu .menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-bar-menu .menu ul li{
+    color: #FFFFFF;
+    padding-left: 36px;
+    font-size: 16px;
+    font-weight: normal;
+}
+/* --------End nav-bar style------- */
+/* ------main section------ */
+
+/* ------top player section------ */
+.container{
+    width: 870px;
+}
+.top-player-player{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 29px;
+}
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.player img{
+    width: 56px;
+    height: 56px;  
+}
+.player-text{
+    font-size: 18px;
+}
