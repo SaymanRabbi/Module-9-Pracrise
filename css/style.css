@@ -172,6 +172,7 @@ grid-row-gap: 26px;
     }
     .lates-course-info{
         margin: 0 auto;
+        filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
     }
     .lates-course .lates-course-info img{
         width: 224px;
@@ -224,4 +225,31 @@ grid-row-gap: 26px;
         font-size: 14.6913px;
         line-height: 20px;
         
+    }
+
+    /* -------media query------ medium devies */
+
+    @media only screen and (max-width:688px) {
+        nav{
+            width: 100%;
+            justify-content: center;
+        }
+        .nav-bar-logo{
+            flex: 1;
+        }
+        .nav-bar-logo .logo-text{
+            font-size: 12px;
+            
+        }
+        .nav-bar-menu .menu ul li{
+            font-size: 12px;
+            
+        }
+        .nav-bar-menu{
+            flex: 1;
+        }
+        .container{
+            width: 100%;
+            /* background-color: red; */
+        }
     }
