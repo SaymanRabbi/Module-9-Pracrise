@@ -232,24 +232,32 @@ grid-row-gap: 26px;
     @media only screen and (max-width:688px) {
         nav{
             width: 100%;
-            justify-content: center;
         }
-        .nav-bar-logo{
-            flex: 1;
-        }
-        .nav-bar-logo .logo-text{
+        .nav-bar-logo .logo-text,.nav-bar-menu .menu ul li {
             font-size: 12px;
-            
-        }
-        .nav-bar-menu .menu ul li{
-            font-size: 12px;
-            
-        }
-        .nav-bar-menu{
-            flex: 1;
         }
         .container{
-            width: 100%;
-            /* background-color: red; */
+           width: 100%;
+       }
+       .top-player-player,.top-blog-grab,.lates-course{
+           grid-template-columns: repeat(1,1fr);
+       }
+       .player{
+           justify-content: center;
+       }
+       .top-blog-blogs{
+           display: block;
+       }
+       .lates-course-info{
+           margin-bottom: 30px;
+       }
+    }
+    /* -------tablet size-------- */
+    @media only screen and (min-width: 688px) and (max-width:992px) {
+        .lates-course{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .lates-course-info{
+            margin-bottom: 30px;
         }
     }
